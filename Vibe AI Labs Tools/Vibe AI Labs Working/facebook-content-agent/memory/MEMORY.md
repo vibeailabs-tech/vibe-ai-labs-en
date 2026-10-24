@@ -1,0 +1,7 @@
+- [Vietnamese language preference](user_language_preference.md) — User prefers Vietnamese for all communication
+- [Vibe AI Labs founder building AI marketing systems](user_vibe_ai_labs_founder.md) — User is founder of Vibe AI Labs, building AI marketing systems for Vietnamese SMBs
+- [Facebook post hashtag placement](feedback_facebook_format.md) — Hashtags must be at the very bottom of Facebook posts, after signature
+- [Facebook Content Agent system operational](project_fb_content_agent_setup.md) — Vibe AI Labs Facebook Content Agent is live and generating content
+- [Qwen 3.5 analysis published](project_qwen_post_published.md) — First FB post published about Qwen 3.5 model (2026-05-05)
+- [Output file naming convention](feedback_output_naming.md) — Output files must include YYYY-MM-DD date prefix
+- [Auto-save output to MD](feedback_auto_save_md.md) — Tự động lưu file MD sau khi hoàn thành bài, không hỏi user

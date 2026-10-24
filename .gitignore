@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+.dev.vars
+*.pem
+client_secret*.json
+service_account*.json
+oauth-token.json
+
+# Dependencies / build
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.wrangler/
+.next/
+.vinext/
+
+# Large duplicate archives (same content as the unzipped folders)
+Brandkit/2. Brandkit Designer.zip
+FILES/vibe_ai_labs_brandkit_building/Vibe_AI_Labs_Design_Team_Kit.zip
+
+# Anthropic source-available skills (all rights reserved, not redistributable)
+Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/docx/
+Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/pdf/
+Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/pptx/
+Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/xlsx/

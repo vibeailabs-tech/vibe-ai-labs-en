@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(github.com)",
+      "Bash(git clone *)",
+      "Bash(mv *)",
+      "Bash(pip3 list)",
+      "Bash(pip3 install *)",
+      "Bash(python3 *)",
+      "Bash(brew *)",
+      "Read(//Users/henryle/**)"
+    ]
+  },
+  "$version": 3
+}

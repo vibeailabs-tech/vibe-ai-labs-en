@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm *)",
+      "Bash(mv *)",
+      "Bash(do *)",
+      "Bash(done)",
+      "Bash(claude *)",
+      "WebFetch(vnexpress.net)",
+      "WebFetch(techcrunch.com)",
+      "WebFetch(www.theverge.com)",
+      "WebFetch(news.ycombinator.com)",
+      "Bash(ls *)"
+    ]
+  },
+  "$version": 4
+}

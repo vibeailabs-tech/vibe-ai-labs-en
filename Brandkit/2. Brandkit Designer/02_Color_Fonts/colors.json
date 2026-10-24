@@ -1,0 +1,224 @@
+{
+  "core": {
+    "midnight": {
+      "name": "Midnight",
+      "hex": "#0B1026",
+      "rgb": [
+        11,
+        16,
+        38
+      ],
+      "hsl": [
+        229,
+        55,
+        10
+      ],
+      "meaning": "Trust · depth · strategy"
+    },
+    "blue": {
+      "name": "Electric Blue",
+      "hex": "#2563FF",
+      "rgb": [
+        37,
+        99,
+        255
+      ],
+      "hsl": [
+        223,
+        100,
+        57
+      ],
+      "meaning": "Innovation · momentum"
+    },
+    "aqua": {
+      "name": "Aqua",
+      "hex": "#14D8C4",
+      "rgb": [
+        20,
+        216,
+        196
+      ],
+      "hsl": [
+        174,
+        83,
+        46
+      ],
+      "meaning": "Growth · freshness"
+    },
+    "violet": {
+      "name": "Violet Glow",
+      "hex": "#8B5CF6",
+      "rgb": [
+        139,
+        92,
+        246
+      ],
+      "hsl": [
+        258,
+        90,
+        66
+      ],
+      "meaning": "Creativity · experimentation"
+    },
+    "cloud": {
+      "name": "Cloud",
+      "hex": "#F8FAFC",
+      "rgb": [
+        248,
+        250,
+        252
+      ],
+      "hsl": [
+        210,
+        40,
+        98
+      ],
+      "meaning": "Clarity · space"
+    }
+  },
+  "support": {
+    "ink": {
+      "name": "Ink",
+      "hex": "#111827",
+      "rgb": [
+        17,
+        24,
+        39
+      ]
+    },
+    "slate": {
+      "name": "Slate",
+      "hex": "#667085",
+      "rgb": [
+        102,
+        112,
+        133
+      ]
+    },
+    "line": {
+      "name": "Line",
+      "hex": "#D9E2F2",
+      "rgb": [
+        217,
+        226,
+        242
+      ]
+    },
+    "white": {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  },
+  "service": {
+    "marketing": {
+      "name": "Marketing số / Digital Marketing",
+      "hex": "#2563FF"
+    },
+    "ai": {
+      "name": "Trí tuệ nhân tạo (AI) & Tự động hóa / AI & Automation",
+      "hex": "#16A34A"
+    },
+    "creative": {
+      "name": "Thiết kế & Sáng tạo / Design & Creative Studio",
+      "hex": "#F97316"
+    }
+  },
+  "logo": {
+    "logo_navy": "#000667",
+    "logo_blue": "#0258FE",
+    "logo_cyan": "#00F9FE"
+  },
+  "gradients": {
+    "growth": {
+      "from": "#2563FF",
+      "to": "#14D8C4",
+      "angle": 135,
+      "css": "linear-gradient(135deg, #2563FF, #14D8C4)"
+    },
+    "creative": {
+      "from": "#8B5CF6",
+      "to": "#2563FF",
+      "angle": 135,
+      "css": "linear-gradient(135deg, #8B5CF6, #2563FF)"
+    },
+    "depth": {
+      "from": "#0B1026",
+      "to": "#2563FF",
+      "angle": 135,
+      "css": "linear-gradient(135deg, #0B1026, #2563FF)"
+    },
+    "spectrum": {
+      "from": "#0B2C9D",
+      "to": "#00F9FE",
+      "angle": 135,
+      "css": "linear-gradient(135deg, #0B2C9D, #00F9FE)"
+    }
+  },
+  "scales": {
+    "blue": {
+      "50": "#EEF3FF",
+      "100": "#DCE6FF",
+      "200": "#B9CDFF",
+      "300": "#92B1FF",
+      "400": "#5C8AFF",
+      "500": "#2563FF",
+      "600": "#1F53D6",
+      "700": "#1943AD",
+      "800": "#123280",
+      "900": "#0C2052"
+    },
+    "aqua": {
+      "50": "#ECFCFA",
+      "100": "#D9F9F6",
+      "200": "#B4F3EC",
+      "300": "#8AECE2",
+      "400": "#4FE2D3",
+      "500": "#14D8C4",
+      "600": "#11B5A5",
+      "700": "#0E9385",
+      "800": "#0A6C62",
+      "900": "#06453F"
+    },
+    "violet": {
+      "50": "#F6F2FE",
+      "100": "#ECE5FE",
+      "200": "#DACBFC",
+      "300": "#C5AEFA",
+      "400": "#A885F8",
+      "500": "#8B5CF6",
+      "600": "#754DCF",
+      "700": "#5F3FA7",
+      "800": "#462E7B",
+      "900": "#2C1D4F"
+    },
+    "midnight": {
+      "50": "#EBECEE",
+      "100": "#D8D9DC",
+      "200": "#B1B3BA",
+      "300": "#858892",
+      "400": "#484C5C",
+      "500": "#0B1026",
+      "600": "#090D20",
+      "700": "#070B1A",
+      "800": "#060813",
+      "900": "#04050C"
+    },
+    "slate": {
+      "50": "#F3F4F5",
+      "100": "#E7E8EB",
+      "200": "#CED1D8",
+      "300": "#B2B8C2",
+      "400": "#8C94A4",
+      "500": "#667085",
+      "600": "#565E70",
+      "700": "#454C5A",
+      "800": "#333842",
+      "900": "#21242B"
+    }
+  }
+}

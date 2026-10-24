@@ -1,0 +1,19 @@
+{
+  "approved": [
+    "Ví dụ từ được dùng 1",
+    "Ví dụ từ được dùng 2"
+  ],
+  "banned": [
+    "đảm bảo",
+    "100%",
+    "cam kết",
+    "chắc chắn",
+    "guaranteed",
+    "Ví dụ từ bị cấm thương hiệu"
+  ],
+  "reasoning": {
+    "đảm bảo": "Vi phạm chính sách quảng cáo Facebook — dùng 'có thể giúp bạn' thay thế",
+    "100%": "Claim tuyệt đối, dễ bị report — dùng 'phần lớn', 'hầu hết' thay thế",
+    "cam kết": "Tương tự 'đảm bảo' — vi phạm FB Ad Policy"
+  }
+}

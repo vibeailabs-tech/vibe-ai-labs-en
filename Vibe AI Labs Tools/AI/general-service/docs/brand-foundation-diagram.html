@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent 1 — Brand Foundation Agent | AI Marketing Agent Team</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080B0F;
+    --surface: #0E1318;
+    --surface2: #141A22;
+    --border: #1E2A36;
+    --text: #E8EDF2;
+    --muted: #5A7080;
+    --accent: #00E5FF;
+
+    --brand-voice: #FF6B6B;
+    --audience: #FFD166;
+    --positioning: #06D6A0;
+    --usp: #A78BFA;
+    --setup: #00E5FF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    text-align: center;
+    margin-bottom: 80px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .vibe-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    opacity: 0.8;
+  }
+
+  .header h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #E8EDF2 0%, #00E5FF 60%, #A78BFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+  }
+
+  .header-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .badge-green { background: rgba(6,214,160,0.15); color: #06D6A0; border: 1px solid rgba(6,214,160,0.3); }
+  .badge-blue  { background: rgba(0,229,255,0.1);  color: var(--accent); border: 1px solid rgba(0,229,255,0.25); }
+  .badge-gray  { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--border); }
+
+  .header-desc {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 560px;
+    margin: 20px auto 0;
+    line-height: 1.7;
+  }
+
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── FLOW DIAGRAM ── */
+  .flow-section {
+    margin-bottom: 80px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+
+  .flow-paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .flow-paths { grid-template-columns: 1fr; }
+  }
+
+  .flow-path {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px;
+  }
+
+  .flow-path-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .flow-nodes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .flow-node {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .flow-arrow {
+    color: var(--muted);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .fn-setup   { background: rgba(0,229,255,0.12);  color: var(--setup);        border: 1px solid rgba(0,229,255,0.3); }
+  .fn-voice   { background: rgba(255,107,107,0.12); color: var(--brand-voice); border: 1px solid rgba(255,107,107,0.3); }
+  .fn-aud     { background: rgba(255,209,102,0.12); color: var(--audience);    border: 1px solid rgba(255,209,102,0.3); }
+  .fn-pos     { background: rgba(6,214,160,0.12);   color: var(--positioning); border: 1px solid rgba(6,214,160,0.3); }
+  .fn-usp     { background: rgba(167,139,250,0.12); color: var(--usp);         border: 1px solid rgba(167,139,250,0.3); }
+  .fn-result  { background: rgba(255,255,255,0.06); color: var(--text);        border: 1px solid var(--border); }
+
+  /* ── SKILLS ── */
+  .skills-section {
+    margin-bottom: 80px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .skill-card:hover {
+    transform: translateX(4px);
+  }
+
+  .skill-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+
+  .skill-cmd {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .skill-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .skill-sections-preview {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .sec-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .skill-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  @media (max-width: 800px) {
+    .skill-body { grid-template-columns: 1fr; }
+  }
+
+  .skill-col {
+    padding: 20px 24px;
+    border-right: 1px solid var(--border);
+  }
+
+  .skill-col:last-child { border-right: none; }
+
+  .col-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .col-content {
+    font-size: 13px;
+    color: #9AB;
+    line-height: 1.7;
+  }
+
+  .col-content li {
+    list-style: none;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .col-content li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+    font-size: 10px;
+    top: 3px;
+  }
+
+  .col-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Color overrides per skill */
+  .card-voice   { border-left: 3px solid var(--brand-voice); }
+  .card-aud     { border-left: 3px solid var(--audience); }
+  .card-pos     { border-left: 3px solid var(--positioning); }
+  .card-usp     { border-left: 3px solid var(--usp); }
+  .card-setup   { border-left: 3px solid var(--setup); }
+
+  .card-voice .skill-cmd   { background: rgba(255,107,107,0.12); color: var(--brand-voice); }
+  .card-aud   .skill-cmd   { background: rgba(255,209,102,0.12); color: var(--audience); }
+  .card-pos   .skill-cmd   { background: rgba(6,214,160,0.12);   color: var(--positioning); }
+  .card-usp   .skill-cmd   { background: rgba(167,139,250,0.12); color: var(--usp); }
+  .card-setup .skill-cmd   { background: rgba(0,229,255,0.12);   color: var(--setup); }
+
+  /* sec-tag colors */
+  .t-voice { background: rgba(255,107,107,0.15);  color: var(--brand-voice); border: 1px solid rgba(255,107,107,0.25); }
+  .t-aud   { background: rgba(255,209,102,0.15);  color: var(--audience);    border: 1px solid rgba(255,209,102,0.25); }
+  .t-pos   { background: rgba(6,214,160,0.15);    color: var(--positioning); border: 1px solid rgba(6,214,160,0.25); }
+  .t-usp   { background: rgba(167,139,250,0.15);  color: var(--usp);         border: 1px solid rgba(167,139,250,0.25); }
+  .t-setup { background: rgba(0,229,255,0.12);    color: var(--setup);       border: 1px solid rgba(0,229,255,0.25); }
+
+  /* ── BRAND.MD MAP ── */
+  .map-section {
+    margin-bottom: 80px;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .brand-md-header {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    padding: 14px 20px;
+    background: rgba(0,229,255,0.06);
+    border: 1px solid rgba(0,229,255,0.2);
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-md-header::before {
+    content: '●';
+    color: var(--brand-voice);
+    font-size: 8px;
+  }
+
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid rgba(0,229,255,0.2);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 700px) {
+    .sections-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .sec-cell {
+    padding: 18px 16px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    transition: opacity 0.2s;
+  }
+
+  .sec-cell:nth-child(4n) { border-right: none; }
+  .sec-cell:nth-last-child(-n+4) { border-bottom: none; }
+
+  .sec-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .sec-name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .sec-owner {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  /* section background tints */
+  .sec-voice { background: rgba(255,107,107,0.05); }
+  .sec-aud   { background: rgba(255,209,102,0.05); }
+  .sec-pos   { background: rgba(6,214,160,0.05); }
+  .sec-usp   { background: rgba(167,139,250,0.05); }
+
+  .sec-voice .sec-name { color: var(--brand-voice); }
+  .sec-aud   .sec-name { color: var(--audience); }
+  .sec-pos   .sec-name { color: var(--positioning); }
+  .sec-usp   .sec-name { color: var(--usp); }
+
+  .sec-voice .sec-owner { background: rgba(255,107,107,0.15); color: var(--brand-voice); }
+  .sec-aud   .sec-owner { background: rgba(255,209,102,0.15); color: var(--audience); }
+  .sec-pos   .sec-owner { background: rgba(6,214,160,0.15);   color: var(--positioning); }
+  .sec-usp   .sec-owner { background: rgba(167,139,250,0.15); color: var(--usp); }
+
+  /* ── RULES ── */
+  .rules-section {
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+
+  .rules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .rules-grid { grid-template-columns: 1fr; }
+  }
+
+  .rule-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px;
+  }
+
+  .rule-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--border);
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+
+  .rule-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .rule-desc {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: gap;
+  }
+
+  .footer-brand {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .footer-brand span { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="vibe-label">AI Marketing Agent Team</div>
+    <h1>Agent 1<br>Brand Foundation</h1>
+    <div class="header-meta">
+      <span class="badge badge-green">✓ Complete</span>
+      <span class="badge badge-blue">5 Skills</span>
+      <span class="badge badge-gray">No API · No MCP</span>
+      <span class="badge badge-gray">Pure Claude Reasoning</span>
+    </div>
+    <p class="header-desc">Xây dựng <code style="font-family:monospace;color:var(--accent);font-size:13px">/profiles-output/brand.md</code> — file nền tảng mà tất cả 16 agents đọc trước khi thực thi bất kỳ nhiệm vụ nào.</p>
+  </div>
+
+  <!-- FLOW -->
+  <div class="flow-section">
+    <div class="section-title">Workflow Paths</div>
+    <div class="flow-paths">
+      <div class="flow-path">
+        <div class="flow-path-label">Full Setup (Recommended)</div>
+        <div class="flow-nodes">
+          <span class="flow-node fn-setup">/brand-setup</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-voice">/brand-voice</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-aud">/audience-profile</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-pos">/positioning</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-usp">/USP-definition</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-result">brand.md ✓</span>
+        </div>
+      </div>
+      <div class="flow-path">
+        <div class="flow-path-label">Individual Skills (Update specific sections)</div>
+        <div class="flow-nodes">
+          <span class="flow-node fn-voice">/brand-voice</span>
+          <span class="flow-node fn-aud">/audience-profile</span>
+          <span class="flow-node fn-pos">/positioning</span>
+          <span class="flow-node fn-usp">/USP-definition</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node fn-result">Updates owned sections only</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="skills-section">
+    <div class="section-title">5 Skills</div>
+
+    <!-- brand-setup -->
+    <div class="skill-card card-setup">
+      <div class="skill-header">
+        <span class="skill-cmd">/brand-setup</span>
+        <span class="skill-desc">Master onboarding command — chạy tất cả 4 skills theo thứ tự, xây dựng toàn bộ brand profile trong một buổi</span>
+        <div class="skill-sections-preview">
+          <span class="sec-tag t-setup">All 12 sections</span>
+        </div>
+      </div>
+      <div class="skill-body">
+        <div class="skill-col">
+          <div class="col-label">Input</div>
+          <div class="col-content">
+            <ul>
+              <li>18 câu hỏi chia 4 phần</li>
+              <li>Phần 1: Thương hiệu &amp; Giọng nói</li>
+              <li>Phần 2: Khách hàng</li>
+              <li>Phần 3: Định vị &amp; Cạnh tranh</li>
+              <li>Phần 4: USP &amp; Bằng chứng</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">Output</div>
+          <div class="col-sections">
+            <span class="sec-tag t-voice">S1–S5</span>
+            <span class="sec-tag t-aud">S6</span>
+            <span class="sec-tag t-pos">S7</span>
+            <span class="sec-tag t-usp">S8</span>
+            <span class="sec-tag t-pos">S9</span>
+            <span class="sec-tag t-pos">S10</span>
+            <span class="sec-tag t-usp">S11</span>
+            <span class="sec-tag t-aud">S12</span>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">Use when</div>
+          <div class="col-content">
+            <ul>
+              <li>Client mới bắt đầu từ zero</li>
+              <li>Cần toàn bộ brand.md trong 1 lần chạy</li>
+              <li>Entry point được khuyến nghị</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- brand-voice -->
+    <div class="skill-card card-voice">
+      <div class="skill-header">
+        <span class="skill-cmd">/brand-voice</span>
+        <span class="skill-desc">Trích xuất giọng nói, tone, từ vựng, và phong cách viết của thương hiệu</span>
+        <div class="skill-sections-preview">
+          <span class="sec-tag t-voice">S1 Brand Name</span>
+          <span class="sec-tag t-voice">S2 Industry</span>
+          <span class="sec-tag t-voice">S3 Location</span>
+          <span class="sec-tag t-voice">S4 Language</span>
+          <span class="sec-tag t-voice">S5 Voice &amp; Tone</span>
+        </div>
+      </div>
+      <div class="skill-body">
+        <div class="skill-col">
+          <div class="col-label">Input</div>
+          <div class="col-content">
+            <ul>
+              <li>Nội dung mẫu (bài đăng, caption) — hoặc</li>
+              <li>5 câu hỏi nếu chưa có nội dung</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">Analyzes</div>
+          <div class="col-content">
+            <ul>
+              <li>Personality traits (3 đặc điểm)</li>
+              <li>Tone: formal/casual, serious/playful</li>
+              <li>Xưng hô: bạn/mình · anh/chị · quý khách</li>
+              <li>Platform: Facebook · TikTok · Zalo</li>
+              <li>3 câu ví dụ đúng tone</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">5 Câu hỏi</div>
+          <div class="col-content">
+            <ul>
+              <li>Tên &amp; lĩnh vực</li>
+              <li>Địa điểm</li>
+              <li>Tính cách thương hiệu (3 từ)</li>
+              <li>Nội dung mẫu hoặc cách nói chuyện</li>
+              <li>Ngôn ngữ: Việt / Anh / Cả hai</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- audience-profile -->
+    <div class="skill-card card-aud">
+      <div class="skill-header">
+        <span class="skill-cmd">/audience-profile</span>
+        <span class="skill-desc">Xây dựng hồ sơ khách hàng mục tiêu và ICP (Ideal Customer Profile)</span>
+        <div class="skill-sections-preview">
+          <span class="sec-tag t-aud">S6 Target Audience</span>
+          <span class="sec-tag t-aud">S12 Content Pillars</span>
+        </div>
+      </div>
+      <div class="skill-body">
+        <div class="skill-col">
+          <div class="col-label">Analyzes</div>
+          <div class="col-content">
+            <ul>
+              <li>Demographics (tuổi, giới tính, thu nhập)</li>
+              <li>Psychographics (giá trị, lối sống, kỳ vọng)</li>
+              <li>Top 5 pain points</li>
+              <li>Buying triggers</li>
+              <li>Hành vi online Vietnam</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">ICP Output</div>
+          <div class="col-content">
+            <ul>
+              <li>Một người thật với tên cụ thể</li>
+              <li>Mô tả 1 ngày trong cuộc sống</li>
+              <li>Platform chính: FB / TikTok / Zalo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">5 Câu hỏi</div>
+          <div class="col-content">
+            <ul>
+              <li>Mô tả khách hàng tốt nhất</li>
+              <li>Khó khăn họ gặp trước khi tìm đến</li>
+              <li>Lý do họ chọn &amp; giới thiệu</li>
+              <li>Mạng xã hội họ dùng nhiều nhất</li>
+              <li>Rào cản trước khi mua</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- positioning -->
+    <div class="skill-card card-pos">
+      <div class="skill-header">
+        <span class="skill-cmd">/positioning</span>
+        <span class="skill-desc">Xây dựng định vị cạnh tranh, phân tích đối thủ, và xác định core offer</span>
+        <div class="skill-sections-preview">
+          <span class="sec-tag t-pos">S7 Positioning</span>
+          <span class="sec-tag t-pos">S9 Core Offer</span>
+          <span class="sec-tag t-pos">S10 Competitors</span>
+        </div>
+      </div>
+      <div class="skill-body">
+        <div class="skill-col">
+          <div class="col-label">Positioning Formula</div>
+          <div class="col-content" style="font-family:monospace;font-size:11px;color:#9AB;line-height:1.8">
+            "For [audience],<br>[brand] is the only<br>[category] that [benefit]<br>— unlike [competitors]<br>who [weakness]."
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">Analyzes</div>
+          <div class="col-content">
+            <ul>
+              <li>Competitive landscape Vietnam</li>
+              <li>Positioning gaps chưa ai claim</li>
+              <li>Trust signals đặc thù VN</li>
+              <li>Core offer: sản phẩm + giá + outcome</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">5 Câu hỏi</div>
+          <div class="col-content">
+            <ul>
+              <li>2–3 đối thủ chính</li>
+              <li>Điểm khác biệt</li>
+              <li>Sản phẩm chủ lực &amp; giá</li>
+              <li>Khách hàng nói gì khi giới thiệu</li>
+              <li>Muốn được nhớ đến như thế nào</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- USP-definition -->
+    <div class="skill-card card-usp">
+      <div class="skill-header">
+        <span class="skill-cmd">/USP-definition</span>
+        <span class="skill-desc">Xác định điểm bán hàng độc nhất, transformation story, proof points, và 5 headline directions</span>
+        <div class="skill-sections-preview">
+          <span class="sec-tag t-usp">S8 USP</span>
+          <span class="sec-tag t-usp">S11 Key Messages</span>
+        </div>
+      </div>
+      <div class="skill-body">
+        <div class="skill-col">
+          <div class="col-label">Analyzes</div>
+          <div class="col-content">
+            <ul>
+              <li>Unique mechanism (đặt tên cụ thể)</li>
+              <li>Before → After transformation</li>
+              <li>Proof points (số liệu, giải thưởng)</li>
+              <li>5 headline directions (tiếng Việt)</li>
+              <li>3 key messages thương hiệu luôn dùng</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">5 Headline Types</div>
+          <div class="col-content">
+            <ul>
+              <li>Outcome (kết quả khách nhận được)</li>
+              <li>Mechanism (cách bạn làm)</li>
+              <li>Before/After (tương phản)</li>
+              <li>Social proof (số liệu)</li>
+              <li>Challenge (challenge đối thủ)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-col">
+          <div class="col-label">5 Câu hỏi</div>
+          <div class="col-content">
+            <ul>
+              <li>Quy trình / cam kết đặc biệt</li>
+              <li>Trạng thái trước và sau</li>
+              <li>Con số, giải thưởng, review</li>
+              <li>Điều khách hay khen nhất</li>
+              <li>Lời hứa tự tin 100%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRAND.MD MAP -->
+  <div class="map-section">
+    <div class="section-title">brand.md — 12 Sections Map</div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--brand-voice)"></div>/brand-voice owns S1–S5</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--audience)"></div>/audience-profile owns S6 + S12</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--positioning)"></div>/positioning owns S7 + S9 + S10</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--usp)"></div>/USP-definition owns S8 + S11</div>
+    </div>
+
+    <div class="brand-md-header">/profiles-output/brand.md</div>
+    <div class="sections-grid">
+      <div class="sec-cell sec-voice">
+        <div class="sec-num">Section 1</div>
+        <div class="sec-name">Brand Name</div>
+        <span class="sec-owner">/brand-voice</span>
+      </div>
+      <div class="sec-cell sec-voice">
+        <div class="sec-num">Section 2</div>
+        <div class="sec-name">Industry</div>
+        <span class="sec-owner">/brand-voice</span>
+      </div>
+      <div class="sec-cell sec-voice">
+        <div class="sec-num">Section 3</div>
+        <div class="sec-name">Location</div>
+        <span class="sec-owner">/brand-voice</span>
+      </div>
+      <div class="sec-cell sec-voice">
+        <div class="sec-num">Section 4</div>
+        <div class="sec-name">Language</div>
+        <span class="sec-owner">/brand-voice</span>
+      </div>
+      <div class="sec-cell sec-voice">
+        <div class="sec-num">Section 5</div>
+        <div class="sec-name">Brand Voice &amp; Tone</div>
+        <span class="sec-owner">/brand-voice</span>
+      </div>
+      <div class="sec-cell sec-aud">
+        <div class="sec-num">Section 6</div>
+        <div class="sec-name">Target Audience</div>
+        <span class="sec-owner">/audience-profile</span>
+      </div>
+      <div class="sec-cell sec-pos">
+        <div class="sec-num">Section 7</div>
+        <div class="sec-name">Positioning</div>
+        <span class="sec-owner">/positioning</span>
+      </div>
+      <div class="sec-cell sec-usp">
+        <div class="sec-num">Section 8</div>
+        <div class="sec-name">USP</div>
+        <span class="sec-owner">/USP-definition</span>
+      </div>
+      <div class="sec-cell sec-pos">
+        <div class="sec-num">Section 9</div>
+        <div class="sec-name">Core Offer</div>
+        <span class="sec-owner">/positioning</span>
+      </div>
+      <div class="sec-cell sec-pos">
+        <div class="sec-num">Section 10</div>
+        <div class="sec-name">Competitors</div>
+        <span class="sec-owner">/positioning</span>
+      </div>
+      <div class="sec-cell sec-usp">
+        <div class="sec-num">Section 11</div>
+        <div class="sec-name">Key Messages</div>
+        <span class="sec-owner">/USP-definition</span>
+      </div>
+      <div class="sec-cell sec-aud">
+        <div class="sec-num">Section 12</div>
+        <div class="sec-name">Content Pillars</div>
+        <span class="sec-owner">/audience-profile</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RULES -->
+  <div class="rules-section">
+    <div class="section-title">Key Rules</div>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <div class="rule-num">01</div>
+        <div class="rule-title">Section ownership is strict</div>
+        <div class="rule-desc">Mỗi skill chỉ ghi vào sections của mình — không bao giờ ghi đè sections của skill khác. Đảm bảo data không bị mất khi chạy lại từng skill riêng lẻ.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">02</div>
+        <div class="rule-title">brand.md là nguồn sự thật duy nhất</div>
+        <div class="rule-desc">Tất cả 16 agents trong hệ thống đọc file này trước khi thực thi. Không có brand.md = không agent nào chạy được.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">03</div>
+        <div class="rule-title">/brand-setup là điểm bắt đầu</div>
+        <div class="rule-desc">Với client mới, luôn chạy /brand-setup để xây dựng toàn bộ 12 sections trong một buổi. Có thể chạy từng skill riêng lẻ để cập nhật sau.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-brand">AI Marketing Agent Team · Agent 1 of 16</div>
+    <div class="footer-brand" style="color:var(--muted)">Built on Claude Code + Claude Skills</div>
+  </div>
+
+</div>
+</body>
+</html>

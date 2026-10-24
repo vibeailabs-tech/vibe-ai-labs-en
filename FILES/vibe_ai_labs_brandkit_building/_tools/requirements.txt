@@ -1,0 +1,8 @@
+pillow
+numpy
+scipy
+scikit-image
+potracer
+fonttools
+python-pptx
+python-docx

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Bash(viết *)",
+      "Bash(nội *)",
+      "Bash(- *)",
+      "Bash(không *)",
+      "Bash(hashtags *)",
+      "Bash(eof)",
+      "Bash(ls *)",
+      "Bash(claude *)",
+      "Bash(🤖 *)",
+      "Bash(năm *)",
+      "Bash(ai *)",
+      "Bash(sự *)",
+      "Bash(kiến *)",
+      "Bash(theo *)",
+      "Bash(quy *)",
+      "Bash(vòng *)",
+      "Bash(điểm *)",
+      "Bash(trong *)",
+      "Bash(điều *)"
+    ]
+  },
+  "$version": 3
+}

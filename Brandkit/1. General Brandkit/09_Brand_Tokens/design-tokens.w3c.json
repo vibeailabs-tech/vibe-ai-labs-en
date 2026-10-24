@@ -1,0 +1,140 @@
+{
+  "color": {
+    "midnight": {
+      "$value": "#0B1026",
+      "$type": "color"
+    },
+    "blue": {
+      "$value": "#2563FF",
+      "$type": "color"
+    },
+    "aqua": {
+      "$value": "#14D8C4",
+      "$type": "color"
+    },
+    "violet": {
+      "$value": "#8B5CF6",
+      "$type": "color"
+    },
+    "cloud": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "ink": {
+      "$value": "#111827",
+      "$type": "color"
+    },
+    "slate": {
+      "$value": "#667085",
+      "$type": "color"
+    },
+    "line": {
+      "$value": "#D9E2F2",
+      "$type": "color"
+    },
+    "white": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "green": {
+      "$value": "#16A34A",
+      "$type": "color"
+    },
+    "orange": {
+      "$value": "#F97316",
+      "$type": "color"
+    },
+    "logo_navy": {
+      "$value": "#000667",
+      "$type": "color"
+    },
+    "logo_blue": {
+      "$value": "#0258FE",
+      "$type": "color"
+    },
+    "logo_cyan": {
+      "$value": "#00F9FE",
+      "$type": "color"
+    }
+  },
+  "service": {
+    "digital_marketing": {
+      "$value": "#2563FF",
+      "$type": "color"
+    },
+    "ai_automation": {
+      "$value": "#16A34A",
+      "$type": "color"
+    },
+    "creative_studio": {
+      "$value": "#F97316",
+      "$type": "color"
+    }
+  },
+  "font": {
+    "headline": {
+      "$value": "Plus Jakarta Sans",
+      "$type": "fontFamily"
+    },
+    "body": {
+      "$value": "Inter",
+      "$type": "fontFamily"
+    }
+  },
+  "spacing": {
+    "2xs": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "xs": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "sm": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "40px",
+      "$type": "dimension"
+    },
+    "2xl": {
+      "$value": "64px",
+      "$type": "dimension"
+    },
+    "3xl": {
+      "$value": "96px",
+      "$type": "dimension"
+    }
+  },
+  "radius": {
+    "xs": {
+      "$value": "6px",
+      "$type": "dimension"
+    },
+    "sm": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "32px",
+      "$type": "dimension"
+    },
+    "pill": {
+      "$value": "999px",
+      "$type": "dimension"
+    }
+  }
+}

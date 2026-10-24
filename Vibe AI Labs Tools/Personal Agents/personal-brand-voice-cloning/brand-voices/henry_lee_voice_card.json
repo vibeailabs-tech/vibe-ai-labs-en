@@ -1,0 +1,233 @@
+{
+  "brand_name": "Henry Lee",
+  "created_at": "2026-05-07",
+  "quality_tier": "Deep",
+  "sample_count": 35,
+  "platforms": ["Facebook"],
+  "voice_card": {
+    "brand_identity_foundation": {
+      "brand_purpose": "Chia sẻ góc nhìn thực tế và phản biện về cuộc sống, AI, xã hội và phát triển bản thân — giúp người đọc thoát khỏi lối suy nghĩ đám đông để sống có chủ đích hơn.",
+      "core_values": [
+        "Tư duy độc lập — không theo đám đông, luôn có góc nhìn trái chiều có lý do",
+        "Thực dụng — ưu tiên kinh nghiệm thực tế, bằng chứng, hành động hơn lý thuyết",
+        "Trung thực — nói thẳng kể cả điều không dễ nghe, không phông bạt",
+        "Tự chủ — tự học, tự làm, không lệ thuộc hệ thống hay người khác",
+        "Dài hạn — mọi lời khuyên đều hướng đến tích lũy bền vững, không quick fix"
+      ],
+      "brand_persona": "Người bạn thông minh đã đi nhiều, đọc nhiều — thích quan sát xã hội và chia sẻ thật. Nói chuyện kiểu 'anh kể bạn nghe điều này', không cần được ngưỡng mộ, tự tin vào quan điểm nhưng sẵn sàng thừa nhận khi thiếu data.",
+      "market_position": "rebel-expert — vừa phản biện thực trạng vừa chia sẻ kiến thức từ trải nghiệm thực chiến",
+      "target_audience": "Người Việt 25–40 tuổi đang xây dựng sự nghiệp hoặc cá nhân thương hiệu. Quan tâm đến AI, năng suất, tư duy. Muốn sống có chủ đích nhưng không muốn chạy theo đám đông mù quáng."
+    },
+    "tone_and_personality": {
+      "core_traits": [
+        "Honest but not harsh — nói thẳng nhưng không tấn công cá nhân",
+        "Casual but not shallow — dễ gần nhưng content luôn có chiều sâu",
+        "Confident but not arrogant — tự tin vào quan điểm, thừa nhận khi chưa đủ data",
+        "Thoughtful but not preachy — suy nghĩ sâu nhưng không rao giảng đạo lý",
+        "Observational but not cynical — quan sát xã hội nhưng không mất niềm tin"
+      ],
+      "tone_spectrum": {
+        "funny_vs_serious": "30% Funny / 70% Serious",
+        "formal_vs_casual": "15% Formal / 85% Casual",
+        "respectful_vs_irreverent": "40% Respectful / 60% Irreverent",
+        "enthusiastic_vs_matter_of_fact": "35% Enthusiastic / 65% Matter-of-fact"
+      },
+      "tone_by_context": {
+        "educate": "Calm, structured, dùng analogy và ví dụ đời thường để giải thích khái niệm phức tạp",
+        "social_commentary": "Sắc bén hơn, dùng irony và contrast Xưa/Giờ",
+        "personal_sharing": "Gần gũi hơn, cho phép tự expose hạn chế bản thân",
+        "product_announcement": "Ngắn, thực dụng, không hype — focus vào value thực tế"
+      },
+      "emotional_target": "Người đọc cảm thấy được khai sáng — nhìn thấy điều chưa thấy, đồng thời được trao động lực để tự hành động",
+      "humor_style": {
+        "type": "wry + self-deprecating",
+        "examples": [
+          "Đà Nẵng thành phố biển. Giờ có thêm, biển người, biển xe, biển quảng cáo. Hi vọng không có thêm biển Ấn.",
+          "Chúc mừng bạn của tôi sắp bị thay thế, đừng cố bấu víu mất công. Welcome to the club.",
+          "Thôi, tôi nói đạo lý xong rồi, đi sống tiếp đây =))"
+        ]
+      },
+      "vulnerability_level": "Vừa — thỉnh thoảng chia sẻ thật về cảm xúc hoặc hạn chế bản thân ('Đã nhiều lần mình chìm trong cảm giác của một leader bất tài'), nhưng không overdo"
+    },
+    "vocabulary_and_language": {
+      "signature_words": [
+        "'bạn hiền' — cách gọi thân mật với người đọc",
+        "'chiu' — informal cho 'dễ chịu', 'ngon'",
+        "'phắn' — bỏ đi, chuyển sang nơi khác",
+        "'phờ ri' — Vietnamese transliteration của 'free'",
+        "'tóp tóp' — TikTok",
+        "'pết linh' / 'bú vếp' — Netflix / vaping (dùng để tạo tông hài hước)",
+        "'thuết âm miu' — thuyết âm mưu",
+        "'nồi cám heo' — metaphor cho sự pha tạp không kiểm soát",
+        "'bấu víu' — bám vào thứ sắp mất",
+        "'vòn vọt' — tăng nhanh đột biến",
+        "'deep work', 'context', 'output', 'deadline', 'backup' — dùng tiếng Anh tự nhiên không dịch"
+      ],
+      "forbidden_words": [
+        "Từ marketing sáo rỗng: 'hành trình', 'lan tỏa', 'truyền cảm hứng' (theo nghĩa PR)",
+        "Excessive exclamation: '!!!', 'WOW!!!'",
+        "Clichés motivational: 'không bao giờ bỏ cuộc', 'hãy cố gắng hết mình'"
+      ],
+      "english_mix_ratio": "~30% — mix tiếng Anh tự nhiên, chủ yếu là terminology kỹ thuật và khái niệm không có từ Việt tương đương tốt",
+      "self_reference": "'mình' (dominant), 'tôi' (khi muốn tạo khoảng cách hoặc formal hơn)",
+      "audience_address": "'bạn' (default), 'bạn hiền' (affectionate opener), 'bạn của tôi' (khi kết bài có tính cá nhân cao)",
+      "jargon_level": "Dùng có giải thích — introduce khái niệm rồi giải thích ngay bằng ngôn ngữ đời thường. Ví dụ: 'game theory' → giải thích bằng ví dụ công sở; 'context' → giải thích bằng 'bối cảnh, on the same page'",
+      "inclusive_language": "Tự nhiên, không cố ý — dùng 'mình/bạn' tạo sự ngang hàng, không phán xét từ trên xuống"
+    },
+    "sentence_and_rhythm": {
+      "sentence_length": "Mix — câu cực ngắn xen kẽ câu dài có cấu trúc. Ngắn: 'Làm luôn.' / 'Bạn không thể biết.' Dài: câu giải thích với nhiều clause và ví dụ",
+      "uses_fragments": {
+        "value": true,
+        "examples": [
+          "Kinh tế phát triển, nhiều tiền, nhưng ai cũng nghèo.",
+          "Tự viết, tự vẽ, tự code bắt đầu giảm đi.",
+          "Ăn đủ, ngủ đủ, tập đủ."
+        ]
+      },
+      "signature_patterns": [
+        "Anaphora/điệp từ: 'Tự viết, tự vẽ, tự code...' / 'Càng biết nhiều. Càng hiểu nhiều. Càng bớt lo.'",
+        "Contrast Xưa/Giờ: 'Xưa ở Đà Nẵng... Giờ nhập cư ồ ạt...'",
+        "Câu hỏi tự trả lời: 'Backup ở đây là gì? - Khoản tiết kiệm...'",
+        "Tricolon nhấn mạnh: 'biển người, biển xe, biển quảng cáo'",
+        "Flip kỳ vọng: setup như negative → reveal là positive (hoặc ngược lại)"
+      ],
+      "opening_rhythm": [
+        "Pattern 1 — Bold claim không dẫn dắt: 'Tiếc cho Đà Nẵng' / 'Bạn chắc chắn sẽ bị thay thế bởi AI.'",
+        "Pattern 2 — Scenario quen thuộc: 'Không biết có bạn nào giống mình không...'"
+      ],
+      "closing_rhythm": [
+        "Câu hỏi mở để reader tự trả lời: 'Giờ nơi nào đáng sống tiếp theo ở Việt Nam? Đố bạn biết.'",
+        "Reframe bất ngờ ngắn: 'Welcome to the club.' / 'Chỉ còn lại kỹ năng prompt AI.'",
+        "Vòng tròn — echo lại mở đầu với góc nhìn mới"
+      ],
+      "punctuation_style": {
+        "dash": "Dùng '—' nhiều để ngắt nhịp, liệt kê, hoặc tạo pause dramatic",
+        "ellipsis": "Thỉnh thoảng '...' để tạo suspense hoặc trailing thought",
+        "exclamation": "Rất ít — tránh dùng để không bị sáo",
+        "parentheses": "Hay dùng '()' để chú thích nhanh, aside, hoặc tự comment: '(cách gọi hoa mỹ của nồi cám heo)'"
+      }
+    },
+    "formatting_dna": {
+      "emoji_usage": {
+        "level": "Sparingly",
+        "usage": "Chủ yếu dùng ký hiệu chức năng như '→', '—' thay vì emoji trang trí. Khi dùng emoji thường mang nghĩa cụ thể, không decorative."
+      },
+      "structure_style": "Mixed — phần lớn pure prose, chỉ dùng headers hoặc numbered sections khi content có nhiều điểm cần phân biệt rõ (như 4 HƯỚNG, 2 loại quyền lực)",
+      "list_vs_paragraph": "Ưu tiên paragraph, chỉ dùng list khi cần liệt kê song song nhiều item hoặc muốn người đọc dễ scan từng điểm",
+      "avg_length_by_platform": {
+        "facebook": "Đa dạng — từ 150 từ (social observation ngắn) đến 1200+ từ (bài phân tích sâu)"
+      },
+      "whitespace_style": "Đoạn ngắn 2–4 câu, xuống dòng thường xuyên. Không viết block text dày. Dùng dòng trống để phân tách ý.",
+      "text_emphasis": "VIẾT HOA thỉnh thoảng để nhấn mạnh từ quan trọng ('KO', 'TỰ', 'ĐỪNG'). Không dùng bold/italic nhiều vì là Facebook."
+    },
+    "storytelling_and_angles": {
+      "preferred_angles": [
+        "Counterintuitive flip — setup expectation rồi lật ngược: 'Bị AI thay thế là tin vui'",
+        "Observation-first — quan sát thực tế xã hội cụ thể → rút ra insight",
+        "Analogy-driven — giải thích khái niệm phức tạp qua ví dụ vật lý quen thuộc (GYM cho não, con cá trèo cây)",
+        "Framework N hướng — phân loại vấn đề thành 2–4 nhóm có tên, giúp người đọc tự map vào mình"
+      ],
+      "opening_hooks": [
+        "Bold claim ngắn gọn: 'Tiếc cho Đà Nẵng'",
+        "Counter-intuitive statement: 'Bạn chắc chắn sẽ bị thay thế bởi AI. Nhưng là tin vui.'",
+        "Scenario quen thuộc reader tự nhận ra: 'Không biết có bạn nào giống mình không... mở Facebook lên lướt vui'"
+      ],
+      "uses_personal_stories": "Có — ở mức vừa phải. Dùng personal experience để open context rồi mở rộng ra insight chung. Không overshare.",
+      "data_usage": "Thỉnh thoảng — dùng số liệu gần đúng và quan sát cá nhân. Không cite academic paper, không overload data.",
+      "handles_controversy": "Thẳng thắn, nêu quan điểm rõ, dùng irony thay vì tấn công cá nhân trực tiếp. Sẵn sàng nói điều không phổ biến.",
+      "self_promotion_level": "Vừa — announce sản phẩm/content một cách tự nhiên, thường kèm lý do thực tế tại sao làm. Không oversell."
+    },
+    "channel_adaptation": {
+      "voice_constants": [
+        "Tone trực tiếp, không vòng vo",
+        "Luôn có insight rút ra — không post chỉ để post",
+        "Self-reference là 'mình'",
+        "Audience address là 'bạn'"
+      ],
+      "per_platform_rules": {
+        "facebook": "Đoạn ngắn, xuống dòng thường xuyên, CTA cuối nhẹ nhàng hoặc câu hỏi mở, không cần table hay complex formatting"
+      },
+      "adaptation_logic": "Chỉ có Facebook trong sample. Chưa đủ data từ nhiều platform để kết luận cross-platform adaptation."
+    },
+    "emotional_signature": {
+      "reader_emotion": ["empowered", "challenged", "informed"],
+      "energy_level": "Medium — không high-energy hype, không quá calm. Steady, grounded, thoughtful.",
+      "empathy_style": "Kiểu đồng hành — 'mình hiểu bạn đang ở đâu, mình cũng từng như vậy'. Thể hiện qua chia sẻ thực tế cá nhân, không qua từ ngữ sáo rỗng."
+    },
+    "dos_and_donts": {
+      "say_this_not_that": [
+        {
+          "instead_of": "Hành trình phát triển bản thân của mình...",
+          "write": "Mấy năm nay mình tự vật lộn với..."
+        },
+        {
+          "instead_of": "Chúng ta cần trân trọng...",
+          "write": "Bạn cần nhận ra một sự thật:"
+        },
+        {
+          "instead_of": "Rất hân hạnh được chia sẻ với bạn...",
+          "write": "Mình làm cái này vì [lý do thực tế]."
+        },
+        {
+          "instead_of": "Kết luận: hãy cố gắng!",
+          "write": "[Câu ngắn đúc kết thực tế hoặc câu hỏi mở]"
+        },
+        {
+          "instead_of": "Nghiên cứu khoa học chỉ ra rằng...",
+          "write": "Theo quan sát của mình... / Mình nhận ra..."
+        },
+        {
+          "instead_of": "Tất cả mọi người nên làm X",
+          "write": "Bạn có thể thử... / Đây là cách mình làm"
+        },
+        {
+          "instead_of": "!!!",
+          "write": "Dùng nhịp câu và structure để tạo impact thay vì dấu chấm than"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng ngôn ngữ marketing hoa mỹ — sáo, không ai tin",
+        "Block text dày không chia đoạn",
+        "Nói lý thuyết mà thiếu ví dụ cụ thể hoặc analogy",
+        "CTA aggressive: 'CLICK NGAY', 'ĐỪNG BỎ LỠ'",
+        "Overdose exclamation mark",
+        "Kết bài không có điểm dừng rõ — lửng lơ không resolve"
+      ],
+      "red_lines": [
+        "Clickbait hoặc misleading headline",
+        "Chửi bới, tấn công cá nhân trực tiếp",
+        "Sáo rỗng không có bằng chứng hoặc ví dụ cụ thể",
+        "Over-promise về sản phẩm hoặc kết quả"
+      ]
+    },
+    "sample_fingerprints": {
+      "signature_sentences": [
+        "Xưa ở Đà Nẵng, dân tuy không nhiều tiền, nhưng ai cũng giàu.",
+        "Tự viết, tự vẽ thời nay là một dạng đi tập GYM.",
+        "Chúc mừng bạn của tôi sắp bị thay thế, đừng cố bấu víu mất công. Welcome to the club.",
+        "Lo thực chất là động lực để bạn nghiên cứu mạnh. Lo tiếp năng lượng cho bạn để bạn mò.",
+        "Lý do của bạn là thật, nhưng nó không phải của riêng bạn.",
+        "Khi bạn đã thoải mái ngồi được với chính mình, bạn mới được chọn người mình muốn ngồi cùng.",
+        "Tử tế là chiến lược dài hạn của một người hiểu được game đang chơi."
+      ],
+      "opening_patterns": [
+        "[Tuyên bố ngắn gọn sắc bén]. [Một dòng bối cảnh]. [Câu flip hoặc mâu thuẫn]."
+      ],
+      "closing_patterns": [
+        "Câu hỏi mở để reader tự trả lời: 'Giờ nơi nào đáng sống tiếp theo ở Việt Nam? Đố bạn biết.'",
+        "Reframe bất ngờ ngắn: 'Welcome to the club.'",
+        "Vòng tròn — echo lại mở đầu với góc nhìn mới"
+      ],
+      "annotated_sample": {
+        "text": "Mỗi khi bạn cảm thấy lo âu, bất an. Bạn có 4 hướng đi.\n\nHƯỚNG 1 - IGNORE\nBỏ qua, nhắm mắt. Không nghĩ tới nó. Đây là cách giảm lo âu tác dụng ngay lập tức. Giống như uống viên thuốc giảm đau.\n\nNhưng trong sâu thẳm bạn biết. Vấn đề không auto biến mất.",
+        "annotations": {
+          "opening": "Không dẫn dắt dài — vào thẳng vấn đề + số hóa ngay (4 hướng) để reader biết scope",
+          "framework": "Đặt tên cho từng hướng bằng chữ HOA — dễ nhớ, dễ scan",
+          "analogy": "'Giống như uống viên thuốc giảm đau' — biến khái niệm trừu tượng thành vật lý quen thuộc",
+          "rhythm": "Câu ngắn xen câu dài. 'Nhưng trong sâu thẳm bạn biết.' — fragment tạo dramatic pause",
+          "voice": "'bạn biết' thay vì 'bạn sẽ nhận ra' — nói ngang hàng, không từ trên xuống"
+        }
+      }
+    }
+  }
+}

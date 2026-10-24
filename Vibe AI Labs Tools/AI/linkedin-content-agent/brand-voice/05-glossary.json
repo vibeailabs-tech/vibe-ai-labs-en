@@ -1,0 +1,10 @@
+{
+  "use": [
+    "// Điền vào đây những từ/cụm từ bạn MUỐN dùng",
+    "// Ví dụ: 'từ kinh nghiệm thực tế', 'cụ thể là', 'áp dụng ngay được'"
+  ],
+  "avoid": [
+    "// Điền vào đây những từ/cụm từ TUYỆT ĐỐI TRÁNH",
+    "// Ví dụ: 'game-changer', 'I'm excited to share', 'hành trình khởi nghiệp'"
+  ]
+}

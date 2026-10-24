@@ -1,0 +1,46 @@
+{
+  "task_id": "2026-09-30-chatgpt-ads-vietnam",
+  "created_at": "2026-09-30T13:30:23+07:00",
+  "status": "rewritten_draft_review_pending",
+  "user_request": "Viết lại toàn bộ theo brand voice Vibe AI Labs, bỏ tên và lối diễn đạt của Advertising Vietnam",
+  "user_preferences": {
+    "keep_full": true,
+    "no_links": true,
+    "emoji_in_headings": true
+  },
+  "output_file": "output/2026_09_30-chatgpt-ads-vietnam-conversation.md",
+  "completed_skills": [
+    "brand-voice-loader",
+    "task-router",
+    "fb-format-selector",
+    "performance-memory-read",
+    "fb-content-brief",
+    "fb-post-writer",
+    "fb-discussion-architect",
+    "fb-first-comment-strategy",
+    "fb-readability-formatter",
+    "fb-visual-brief",
+    "fb-vietnamese-localizer",
+    "fb-policy-checker",
+    "fb-save-share-optimizer",
+    "fb-send-time-optimizer",
+    "fb-review-queue",
+    "output-validator"
+  ],
+  "review_queue": {
+    "aggregate_confidence": 0.89,
+    "routing_decision": "human_review",
+    "reviewer_status": "pending",
+    "reason": "Một số chi tiết về triển khai tại Việt Nam, giá và Sponsored Agents chỉ được quy chiếu theo bài gốc; cần xác nhận trước khi xuất bản."
+  },
+  "validation": {
+    "status": "draft_ready_review",
+    "score": "10/11",
+    "failed_check": "review_queue_decided: pending",
+    "banned_terms_clean": true,
+    "links_clean": true,
+    "body_words": 3230,
+    "source_name_removed": true
+  },
+  "published": false
+}

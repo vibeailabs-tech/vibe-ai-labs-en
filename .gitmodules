@@ -1,0 +1,21 @@
+[submodule "website/vibe_ai_labs_website/website/vibe-ai-labs"]
+	path = website/vibe_ai_labs_website/website/vibe-ai-labs
+	url = https://github.com/vibeailabs-tech/vibe-ai-labs-website.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-obsidian"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-obsidian
+	url = https://github.com/AgriciDaniel/claude-obsidian.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/banana-claude"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/banana-claude
+	url = https://github.com/AgriciDaniel/banana-claude.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-blog"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-blog
+	url = https://github.com/AgriciDaniel/claude-blog.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-seo"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-seo
+	url = https://github.com/AgriciDaniel/claude-seo.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-cybersecurity"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-cybersecurity
+	url = https://github.com/AgriciDaniel/claude-cybersecurity.git
+[submodule "Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-ads"]
+	path = Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-ads
+	url = https://github.com/AgriciDaniel/claude-ads.git

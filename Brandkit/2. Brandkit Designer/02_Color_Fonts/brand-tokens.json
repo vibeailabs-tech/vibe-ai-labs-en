@@ -1,0 +1,184 @@
+{
+  "$schema": "brand tokens v2",
+  "brand": {
+    "name": "Vibe AI Labs",
+    "descriptor": "AI-Powered Growth & Creative Agency",
+    "descriptor_vi": "Agency tăng trưởng & sáng tạo ứng dụng AI",
+    "brand_line": "Ideas. Intelligence. Real Growth.",
+    "campaign_line": "Turn Brands into Growth",
+    "pillar_order": [
+      "marketing",
+      "ai_automation",
+      "creative"
+    ],
+    "website": "https://vibe-ai-labs.vibeailabs.workers.dev",
+    "email": "vibeailabs@gmail.com"
+  },
+  "colors": {
+    "midnight": "#0B1026",
+    "blue": "#2563FF",
+    "aqua": "#14D8C4",
+    "violet": "#8B5CF6",
+    "cloud": "#F8FAFC",
+    "ink": "#111827",
+    "slate": "#667085",
+    "line": "#D9E2F2",
+    "white": "#FFFFFF",
+    "green": "#16A34A",
+    "orange": "#F97316",
+    "logo_navy": "#000667",
+    "logo_blue": "#0258FE",
+    "logo_cyan": "#00F9FE"
+  },
+  "service_accents": {
+    "digital_marketing": "#2563FF",
+    "ai_automation": "#16A34A",
+    "creative_studio": "#F97316"
+  },
+  "gradients": {
+    "growth": "linear-gradient(135deg, #2563FF, #14D8C4)",
+    "creative": "linear-gradient(135deg, #8B5CF6, #2563FF)",
+    "depth": "linear-gradient(135deg, #0B1026, #2563FF)",
+    "spectrum": "linear-gradient(135deg, #0B2C9D, #00F9FE)"
+  },
+  "typography": {
+    "headline": "Plus Jakarta Sans",
+    "body": "Inter",
+    "fallback": "Arial, sans-serif",
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "scale": {
+      "display": {
+        "font": "Plus Jakarta Sans",
+        "weight": 800,
+        "size": 72,
+        "line_height": 80,
+        "tracking": "-0.03em"
+      },
+      "h1": {
+        "font": "Plus Jakarta Sans",
+        "weight": 700,
+        "size": 56,
+        "line_height": 64,
+        "tracking": "-0.02em"
+      },
+      "h2": {
+        "font": "Plus Jakarta Sans",
+        "weight": 700,
+        "size": 40,
+        "line_height": 48,
+        "tracking": "-0.02em"
+      },
+      "h3": {
+        "font": "Plus Jakarta Sans",
+        "weight": 700,
+        "size": 28,
+        "line_height": 36,
+        "tracking": "-0.01em"
+      },
+      "h4": {
+        "font": "Plus Jakarta Sans",
+        "weight": 600,
+        "size": 22,
+        "line_height": 30,
+        "tracking": "0"
+      },
+      "body_l": {
+        "font": "Inter",
+        "weight": 400,
+        "size": 18,
+        "line_height": 28,
+        "tracking": "0"
+      },
+      "body": {
+        "font": "Inter",
+        "weight": 400,
+        "size": 16,
+        "line_height": 26,
+        "tracking": "0"
+      },
+      "small": {
+        "font": "Inter",
+        "weight": 400,
+        "size": 14,
+        "line_height": 22,
+        "tracking": "0"
+      },
+      "caption": {
+        "font": "Inter",
+        "weight": 500,
+        "size": 12,
+        "line_height": 18,
+        "tracking": "0.01em"
+      },
+      "overline": {
+        "font": "Plus Jakarta Sans",
+        "weight": 700,
+        "size": 12,
+        "line_height": 16,
+        "tracking": "0.2em"
+      },
+      "button": {
+        "font": "Inter",
+        "weight": 600,
+        "size": 15,
+        "line_height": 20,
+        "tracking": "0"
+      }
+    }
+  },
+  "spacing": {
+    "2xs": 2,
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 40,
+    "2xl": 64,
+    "3xl": 96
+  },
+  "radius": {
+    "xs": 6,
+    "sm": 12,
+    "md": 20,
+    "lg": 32,
+    "pill": 999
+  },
+  "shadow": {
+    "sm": "0 1px 2px rgba(11,16,38,.08)",
+    "md": "0 8px 24px rgba(11,16,38,.10)",
+    "lg": "0 24px 64px rgba(11,16,38,.18)",
+    "glow": "0 0 48px rgba(37,99,255,.45)"
+  },
+  "breakpoints": {
+    "sm": 640,
+    "md": 768,
+    "lg": 1024,
+    "xl": 1280,
+    "2xl": 1536
+  },
+  "motion": {
+    "fast": "150ms",
+    "base": "250ms",
+    "slow": "500ms",
+    "easing": "cubic-bezier(.22,1,.36,1)"
+  },
+  "logo": {
+    "min_width_horizontal_px": 140,
+    "min_width_stacked_px": 96,
+    "min_icon_px": 24,
+    "clear_space": "1x = height of the logo dot (circle)"
+  },
+  "voice": [
+    "Intelligent",
+    "Clear",
+    "Creative",
+    "Experimental",
+    "Forward-looking"
+  ]
+}

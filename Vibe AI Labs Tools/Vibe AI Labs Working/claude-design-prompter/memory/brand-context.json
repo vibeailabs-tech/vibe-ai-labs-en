@@ -1,0 +1,145 @@
+{
+  "brand_loaded": false,
+
+  "tier1": {
+    "name": "",
+    "industry": "",
+    "target_audience": "",
+    "brand_personality": [],
+    "mission": "",
+    "tagline": "",
+    "reference_brands": [],
+    "avoid_brands": [],
+
+    "colors": {
+      "primary": "",
+      "accent": "",
+      "background": "",
+      "text": "",
+      "secondary": []
+    },
+
+    "typography": {
+      "heading": "",
+      "body": ""
+    },
+
+    "tone": "",
+    "voice_dos": [],
+    "voice_donts": [],
+    "imagery_style": "",
+    "never_do": [],
+    "platform_priority": [],
+    "language": "",
+    "logo": "",
+    "design_notes": ""
+  },
+
+  "tier2": {
+    "brand_values": [],
+    "vision": "",
+    "positioning_statement": "",
+
+    "vocabulary": {
+      "preferred": [],
+      "avoid": []
+    },
+
+    "colors": {
+      "rgb": {
+        "primary": "",
+        "accent": "",
+        "background": "",
+        "text": ""
+      },
+      "cmyk": {
+        "primary": "",
+        "accent": "",
+        "background": "",
+        "text": ""
+      },
+      "pantone": {
+        "primary": "",
+        "accent": ""
+      },
+      "semantic": {
+        "error": "",
+        "success": "",
+        "warning": "",
+        "info": ""
+      },
+      "dark_mode": {
+        "background": "",
+        "surface": "",
+        "text": ""
+      },
+      "gradient": "",
+      "usage_rules": ""
+    },
+
+    "typography": {
+      "display": "",
+      "caption": "",
+      "scale": {
+        "h1": "",
+        "h2": "",
+        "h3": "",
+        "h4": "",
+        "body": "",
+        "caption": ""
+      },
+      "weights": "",
+      "line_height": "",
+      "letter_spacing": ""
+    },
+
+    "logo": {
+      "variants": [],
+      "safe_zone": "",
+      "min_size": "",
+      "file_formats": [],
+      "dont": [],
+      "animated": {
+        "has_animation": false,
+        "duration": "",
+        "easing": ""
+      }
+    },
+
+    "photography": {
+      "lighting": "",
+      "composition": "",
+      "color_grading": ""
+    },
+
+    "brand_pattern": "",
+    "data_viz_style": "",
+
+    "document_templates": {
+      "business_card": "",
+      "letterhead": "",
+      "presentation_master": ""
+    },
+
+    "layout": {
+      "grid": "",
+      "spacing_scale": "",
+      "border_radius": "",
+      "shadow": ""
+    },
+
+    "iconography_style": "",
+    "motion_principles": "",
+
+    "accessibility": {
+      "min_contrast_ratio": "",
+      "min_font_size": ""
+    },
+
+    "print_specs": {
+      "color_mode": "",
+      "bleed": "",
+      "margin": ""
+    }
+  }
+}
