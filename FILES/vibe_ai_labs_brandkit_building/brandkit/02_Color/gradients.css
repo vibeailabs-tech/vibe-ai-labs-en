@@ -1,8 +1,0 @@
-:root{
-  --vibe-gradient-growth: linear-gradient(135deg, #2563FF 0%, #14D8C4 100%);
-  --vibe-gradient-creative: linear-gradient(135deg, #8B5CF6 0%, #2563FF 100%);
-  --vibe-gradient-depth: linear-gradient(135deg, #0B1026 0%, #2563FF 100%);
-  --vibe-gradient-spectrum: linear-gradient(135deg, #0B2C9D 0%, #00F9FE 100%);
-  --vibe-gradient-spectrum-3: linear-gradient(135deg, #0B2C9D 0%, #2563FF 48%, #00F9FE 100%);
-  --vibe-gradient-hero-dark: radial-gradient(1200px 600px at 75% 20%, rgba(37,99,255,.45), transparent 60%), radial-gradient(900px 500px at 15% 90%, rgba(20,216,196,.25), transparent 60%), #0B1026;
-}

@@ -1,1 +1,0 @@
-CMYK values are straight RGB->CMYK conversions for reference only. For print, proof against a physical swatch or ask the printer for the closest Pantone/Coated match before production.

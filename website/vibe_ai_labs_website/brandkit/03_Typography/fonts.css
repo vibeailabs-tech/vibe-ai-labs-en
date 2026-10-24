@@ -1,9 +1,0 @@
-/* Web usage - host the files or use Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
-
-:root{
-  --font-headline: 'Plus Jakarta Sans', 'Inter', Arial, sans-serif;
-  --font-body: 'Inter', Arial, sans-serif;
-}
-body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:#111827}
-h1,h2,h3,h4{font-family:var(--font-headline);color:#0B1026;letter-spacing:-0.02em}

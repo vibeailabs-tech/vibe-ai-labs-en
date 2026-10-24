@@ -22,12 +22,12 @@ __pycache__/
 .vinext/
 
 # Large duplicate archives (same content as the unzipped folders)
-Brandkit/2. Brandkit Designer.zip
-FILES/vibe_ai_labs_brandkit_building/Vibe_AI_Labs_Design_Team_Kit.zip
+02_Brandkit/02_Designer-Kit.zip
+01_General/02_Brand-Build-Source/Vibe_AI_Labs_Design_Team_Kit.zip
 
 # Anthropic source-available skills (all rights reserved, not redistributable)
-Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/docx/
-Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/pdf/
-Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/pptx/
-Vibe AI Labs Tools/Personal Agents/agent-skills-working/skills-main/skills/xlsx/
-Vibe AI Labs Deck/Community & Events/_build/deck.html
+06_AI-Tools/03_Personal-Agents/agent-skills-working/skills-main/skills/docx/
+06_AI-Tools/03_Personal-Agents/agent-skills-working/skills-main/skills/pdf/
+06_AI-Tools/03_Personal-Agents/agent-skills-working/skills-main/skills/pptx/
+06_AI-Tools/03_Personal-Agents/agent-skills-working/skills-main/skills/xlsx/
+03_Decks/01_Community-Events/_build/deck.html

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="FILES/Groups's Cover Photo/Vibe AI Labs Logo.jpeg" alt="Vibe AI Labs" width="160">
+  <img src="05_Social-Covers/Vibe AI Labs Logo.jpeg" alt="Vibe AI Labs" width="160">
 </p>
 
 <h1 align="center">Vibe AI Labs</h1>
@@ -20,7 +20,7 @@
 
 ---
 
-This repository is the **master asset hub of Vibe AI Labs**: company profile, brand identity kit, service collateral, website, and the in-house AI agents we use to run Marketing × AI × Creative. The company overview below is based on the [Company Profile (EN)](1.%20General/Vibe_AI_Labs_Company_Profile_EN.pdf).
+This repository is the **master asset hub of Vibe AI Labs**: company profile, brand identity kit, service collateral, website, and the in-house AI agents we use to run Marketing × AI × Creative. The company overview below is based on the [Company Profile (EN)](01_General/01_Company-Profile/Vibe_AI_Labs_Company_Profile_EN.pdf).
 
 > Folder and file names are kept in their original language (mostly Vietnamese) so the structure matches the Vietnamese repository exactly.
 
@@ -294,21 +294,32 @@ Note: Aqua is not used for text on light backgrounds. The SVG logos are currentl
 
 # Part B — Repository structure
 
+![Folder map](00_Folder-Map.png)
+
 ```
 VIBE AI LABS/
-├── 1. General/                 Official sales documents (VI · EN · ZH)
-├── Brandkit/                   Brand identity kit
-│   ├── 1. General Brandkit/    Full Brand Kit v2.0
-│   └── 2. Brandkit Designer/   Kit for the poster design team
-├── FILES/                      Working sources, build scripts, group cover photos
-├── Services/                   Collateral for the 3 service capabilities
-├── Vibe AI Labs Deck/          Company Profile (VI · EN · ZH)
-├── Vibe AI Labs Tools/         In-house AI agents & skills
-├── website/                    Website + bundled brand kit
-└── Design Brief Skill (empty).zip
+├── 00_Folder-Map.png           Level-1 folder map
+├── 01_General/                 General documents
+│   ├── 01_Company-Profile/     Company profile, one-pager, proposal template (VI · EN · ZH)
+│   └── 02_Brand-Build-Source/  Brand dossier .docx, brand kit build scripts, posters, notes
+├── 02_Brandkit/                Brand identity kit
+│   ├── 01_General-Brandkit/    Full Brand Kit v2.0 (source of truth)
+│   └── 02_Designer-Kit/        Kit for the poster design team
+├── 03_Decks/
+│   └── 01_Community-Events/    Community & Events deck + Outreach Kit
+├── 04_Services/                Collateral for the 3 service capabilities
+├── 05_Social-Covers/           Logo and Facebook group cover images
+├── 06_AI-Tools/                In-house AI agents & skills
+│   ├── 01_AI-Agents/
+│   ├── 02_Vibe-Working/
+│   └── 03_Personal-Agents/
+└── 07_Website/
+    └── vibe-ai-labs/           Website source code (submodule)
 ```
 
-## `1. General/` — Sales documents
+## `01_General/`
+
+### `01_Company-Profile/` — Sales documents
 
 | File | Description |
 |---|---|
@@ -316,13 +327,19 @@ VIBE AI LABS/
 | `Vibe_AI_Labs_One_Pager_VI.pdf` · `_EN.pdf` · `_ZH.pdf` | One-page overview |
 | `Vibe_AI_Labs_Proposal_Template_VI.pdf` · `.docx` | Project proposal template (PDF and editable) |
 
-## `Vibe AI Labs Deck/`
+### `02_Brand-Build-Source/` — Brand build sources
 
-Company Profile in VI · EN · ZH for presentations.
+| Item | Description |
+|---|---|
+| `Vibe AI Labs .docx` (+ `.bak`) | 34-section brand dossier (Vietnamese) and its original |
+| `_tools/` | Python build scripts: `brandbuild/` (logo, brand kit, rendering), `dk/` (R1–R6 poster engine, playbook, cheat sheet), `trace_data/`, `assets/`, `pdf_to_png.swift`, `setup.sh`, `requirements.txt`, `folder_map.py` |
+| `posts/` | Facebook posters |
+| `Vibe_AI_Labs_Design_Team_Kit.zip` | Zipped Design Team Kit (kept locally only) |
+| `CLAUDE.md` | Working notes |
 
-## `Brandkit/` — Brand identity
+## `02_Brandkit/` — Brand identity
 
-### `1. General Brandkit/` (Brand Kit v2.0, ~430 files)
+### `01_General-Brandkit/` (Brand Kit v2.0, ~430 files)
 
 | Folder | Contents |
 |---|---|
@@ -338,7 +355,7 @@ Company Profile in VI · EN · ZH for presentations.
 | `09_Brand_Tokens` | `brand-tokens.json`, `design-tokens.w3c.json`, `tailwind.config.js`, `tokens.css` |
 | `99_Reference` | Reference material |
 
-### `2. Brandkit Designer/` (Design Team Kit, ~460 files)
+### `02_Designer-Kit/` (Design Team Kit, ~460 files)
 
 | Folder | Contents |
 |---|---|
@@ -347,20 +364,20 @@ Company Profile in VI · EN · ZH for presentations.
 | `03_Poster_Templates` | 6 layouts R1–R6 (Announcement · Insight list · Pillars · Stat · Quote · Event) × 4 ratios (1:1 · 4:5 · 9:16 · 16:9) × dark/light = 48 SVG + PNG; `Print_A3`; safe-zone `Guides` |
 | `04_Components` · `05_Backgrounds` · `06_Icons` | Components, backgrounds, icons |
 | `07_Copy_Library` | Copy library |
-| `08_Export_Handoff` | Export specs, QA checklist, brief |
+| `08_Export_Handoff` | Export specs, QA checklist, brief template, Hermes Agent poster brief |
 | `09_Reference` | Reference material |
 
-The 81 MB `2. Brandkit Designer.zip` archive is kept locally only, not in the repo — zip this folder again when sending it to a designer.
+The 81 MB `02_Designer-Kit.zip` archive is kept locally only, not in the repo.
 
-## `FILES/`
+## `03_Decks/01_Community-Events/` — Partnership deck for AI projects
 
 | Item | Description |
 |---|---|
-| `vibe_ai_labs_brandkit_building/` | Brand kit workshop: `brandkit/` (source of truth), `Vibe_AI_Labs_Design_Team_Kit/`, `Vibe AI Labs .docx` (34-section brand dossier, Vietnamese) and its `.bak`, `posts/`, `CLAUDE.md` (working notes) |
-| `vibe_ai_labs_brandkit_building/_tools/` | Python build scripts: `brandbuild/` (logo, brand kit, rendering), `dk/` (R1–R6 poster engine, playbook, cheat sheet), `trace_data/`, `pdf_to_png.swift`, `setup.sh`, `requirements.txt` |
-| `Groups's Cover Photo/` | Logo and cover images for the Facebook groups (AI Agent Vietnam, AI Agent Marketing, Vibe Marketing Vietnam, ChatGPT Ads, Chinese-customer campaigns, growth banner) |
+| `Outreach_Kit/` | **Vibe AI Community & Events** deck (EN, 15 slides) and outreach templates for every channel, in the Vibe AI Labs and Henry Le voices |
+| `01_Noi-dung-deck_Community-Events_VI.md` | Deck content, strategy and sources (Vietnamese) |
+| `_build/` | Deck build script: `python3 _build/build_deck.py` |
 
-## `Services/` — Service collateral
+## `04_Services/` — Service collateral
 
 | File | Description |
 |---|---|
@@ -369,11 +386,15 @@ The 81 MB `2. Brandkit Designer.zip` archive is kept locally only, not in the re
 | `III. THIẾT KẾ & SÁNG TẠO.png` | Design & Creative Studio services infographic |
 | `dv1_marketing-so_4x5.png` · `dv2_ai-tu-dong-hoa_4x5.png` · `dv3_thiet-ke-sang-tao_1x1.png` | Social media crops |
 
-## `Vibe AI Labs Tools/` — AI agents & skills
+## `05_Social-Covers/`
+
+Logo and cover images for the Facebook groups (AI Agent Vietnam, AI Agent Marketing, Vibe Marketing Vietnam, ChatGPT Ads, Chinese-customer campaigns, growth banner).
+
+## `06_AI-Tools/` — AI agents & skills
 
 Most run on **Claude Code** as markdown skills/commands, with no installation required. Prompts are written in Vietnamese or mixed Vietnamese/English.
 
-### `AI/`
+### `01_AI-Agents/`
 
 | Agent | What it does | How to run |
 |---|---|---|
@@ -381,16 +402,16 @@ Most run on **Claude Code** as markdown skills/commands, with no installation re
 | `brand-voice-cloning/` | 6 skills that analyze content samples → 10-dimension Brand Voice Card (JSON + Markdown) | See `CLAUDE.md` |
 | `facebook-content-agent/` | Orchestrator + 29 skills to write, optimize and review Facebook posts | `/fb-content-agent [request]` |
 | `linkedin-content-agent/` | Orchestrator + 33 skills for LinkedIn (posts, carousels, replies, monthly plan) | `/li-content-agent [request]` |
-| `content-agent/` | One topic → 8 platform-native posts (layers: customer → platforms → engine → voice → feedback) | Upload to a Claude Project, start with `01-START_HERE.md` |
+| `content-agent/` | One topic → 8 platform-native posts (customer → platforms → engine → voice → feedback) | Upload to a Claude Project, start with `01-START_HERE.md` |
 | `claude-design-prompter/` | Asks the right questions, then writes a complete prompt for Claude Design | Paste `ORCHESTRATOR.md` into Claude |
 | `general-service/` | Architecture blueprint for an AI Marketing Agent Team: 16 agents + orchestrator, 4 layers, 43 skills | Documentation, not runnable code |
 | `ai-marketing-automation-stack/` | Third-party skill packs (submodules): `claude-seo`, `claude-ads`, `claude-blog`, `banana-claude`, `claude-obsidian`, `claude-cybersecurity` | See each repo's README |
 
-### `Vibe AI Labs Working/`
+### `02_Vibe-Working/`
 
 Versions customized for Vibe AI Labs itself: `brandvoice/vibe_ai_labs_voice_card.md` (the Vibe AI Labs voice card), `facebook-content-agent/`, `linkedin-content-agent/`, `claude-design-prompter/` (with `memory/brand-context.json`).
 
-### `Personal Agents/`
+### `03_Personal-Agents/`
 
 | Item | Description |
 |---|---|
@@ -398,17 +419,13 @@ Versions customized for Vibe AI Labs itself: `brandvoice/vibe_ai_labs_voice_card
 | `agent-skills-working/skills-main/` | Anthropic's example skills (frontend-design, skill-creator, mcp-builder…), Apache 2.0. The `docx`, `pdf`, `pptx` and `xlsx` skills are source-available and not redistributable, so they are not in this repo — get them from [github.com/anthropics/skills](https://github.com/anthropics/skills) |
 | `agent-skills-working/vibe-skill-creator/` | Guide for writing skills the Vibe AI Labs way, with anti-patterns and a cold outreach example |
 
-## `website/`
-
-| Item | Description |
-|---|---|
-| `vibe_ai_labs_website/website/vibe-ai-labs/` | **Submodule** → [`vibeailabs-tech/vibe-ai-labs-website`](https://github.com/vibeailabs-tech/vibe-ai-labs-website) (private). Next.js 16 via vinext, Cloudflare Workers, D1 + Drizzle, trilingual VI/EN/ZH. Live: https://vibe-ai-labs.vibeailabs.workers.dev |
-| `vibe_ai_labs_website/brandkit/` | Copy of the brand kit used by the website |
-| `vibe_ai_labs_website/Vibe AI Labs .docx` | Company brief used for the website |
-
-## `Design Brief Skill (empty).zip`
+### `Design-Brief-Skill.zip`
 
 Skeleton for a Claude "design brief" skill (SKILL.md, PDF-reading script, empty brandkit folder to fill in).
+
+## `07_Website/vibe-ai-labs/`
+
+**Submodule** → [`vibeailabs-tech/vibe-ai-labs-website`](https://github.com/vibeailabs-tech/vibe-ai-labs-website) (private). Next.js 16 via vinext, Cloudflare Workers, D1 + Drizzle, trilingual VI/EN/ZH. Live: https://vibe-ai-labs.vibeailabs.workers.dev. Shared brand kit lives in `02_Brandkit/01_General-Brandkit/`.
 
 ---
 
@@ -428,8 +445,8 @@ The Vietnamese edition with identical files lives at [vibeailabs-tech/vibe-ai-la
 
 | Path | Repository |
 |---|---|
-| `website/vibe_ai_labs_website/website/vibe-ai-labs` | vibeailabs-tech/vibe-ai-labs-website (private) |
-| `Vibe AI Labs Tools/AI/ai-marketing-automation-stack/claude-seo` | AgriciDaniel/claude-seo |
+| `07_Website/vibe-ai-labs` | vibeailabs-tech/vibe-ai-labs-website (private) |
+| `06_AI-Tools/01_AI-Agents/ai-marketing-automation-stack/claude-seo` | AgriciDaniel/claude-seo |
 | `…/claude-ads` | AgriciDaniel/claude-ads |
 | `…/claude-blog` | AgriciDaniel/claude-blog |
 | `…/banana-claude` | AgriciDaniel/banana-claude |
@@ -443,16 +460,16 @@ The Vietnamese edition with identical files lives at [vibeailabs-tech/vibe-ai-la
 ### Rebuild the brand kit / posters
 
 ```bash
-cd "FILES/vibe_ai_labs_brandkit_building"
+cd "01_General/02_Brand-Build-Source"
 bash _tools/setup.sh            # restores build scripts into /tmp
 ```
 
-Requires Google Chrome (SVG → PNG, HTML → PDF rendering) and Python 3. Details in `FILES/vibe_ai_labs_brandkit_building/CLAUDE.md`.
+Requires Google Chrome (SVG → PNG, HTML → PDF rendering) and Python 3. Details in `01_General/02_Brand-Build-Source/CLAUDE.md`.
 
 ### Website
 
 ```bash
-cd website/vibe_ai_labs_website/website/vibe-ai-labs
+cd 07_Website/vibe-ai-labs
 npm install
 npm run dev       # http://localhost:3000
 npm run deploy    # build + Cloudflare Workers
