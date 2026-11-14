@@ -83,3 +83,12 @@ Cách sửa docx: giải nén (zip) → sửa `word/document.xml` bằng script 
 4. Mở thử PPTX/DOCX/SVG trong Office/Figma/Illustrator, báo lỗi → sửa.
 5. Lấy phản hồi poster "rủi ro khi dùng AI"; làm thêm poster khác từ `recipes.py` (bài viết 3 câu hỏi bắt đầu AI; Story 9:16; A3).
 6. (Tùy chọn) Bleed 3 mm cho `Print_A3`; Pantone; mockup thực tế; bản tiếng Anh của Brand Guidelines.
+
+## 9. Hồ sơ năng lực (`01_Company-Profile/`) — trang "Gói dịch vụ" (2026-11-13)
+
+- **Không có file nguồn** (HTML) của `Vibe_AI_Labs_Company_Profile_*.pdf`, One Pager và Proposal Template trong repo — chỉ có PDF xuất từ Chrome. Muốn sửa phải chèn/sửa trực tiếp trên PDF.
+- Đã thêm 3 trang "Gói dịch vụ" (tổng quan · 01 Khởi động · 02 Tăng tốc) vào **bản VI**, ngay trước trang "Toàn cảnh dịch vụ": các trang cũ 09–45 đã đánh lại số thành 12–48. Người dùng đã duyệt bản VI; **cả ba bản VI · EN · ZH giờ 48 trang**. Tên gói: Khởi động / Kickstart / 起步 và Tăng tốc / Accelerate / 加速.
+- Script: `_tools/profile_packages/build_packages.py` (`--lang vi` build vào thư mục tạm; thêm `--write` để ghi đè PDF). Nội dung ba ngôn ngữ nằm trong dict `T`; khác biệt kiểu chữ của bản EN/ZH nằm trong `LANG_CSS` (bản ZH dùng PingFang SC, nhãn to hơn). Script yêu cầu PDF nguồn là bản gốc 45 trang (`git checkout -- <file>` trước khi chạy lại).
+- Thông số thiết kế deck (đo từ PDF gốc, đã khớp pixel): trang 1122.5×794 px (A4 ngang), lề 52 px; font biến thiên Plus Jakarta Sans + Inter nạp trực tiếp; nhãn in hoa letter-spacing .2em; tiêu đề −.025em; pill 10.5 px Inter 500, nền/viền theo trụ (`#EBF1FF/#B3C9FF` · `#EAF7EF/#AADDBD` · `#FEF1E7/#FCC6A0`); phần pill trong thẻ phải dùng CSS `zoom` để vừa chiều cao.
+- Quy tắc nội dung hai gói: giữ chính sách "không áp dụng một mức giá cố định" (không in giá); số lượng trong gói Khởi động (1 landing page, 1–2 kênh, 1 buổi đào tạo) là đề xuất, người dùng chưa xác nhận; chưa ghi thời gian triển khai.
+- **One Pager (2026-11-13):** cả ba bản VI · EN · ZH giờ **2 trang** — trang 2 là hai gói dịch vụ (phạm vi theo ba trụ, không có phần bàn giao/KPI). Dựng bằng `build_packages.py --lang <vi|en|zh> --onepager [--write]`; script yêu cầu PDF nguồn là bản gốc 1 trang. Tên file vẫn là `One_Pager`.
