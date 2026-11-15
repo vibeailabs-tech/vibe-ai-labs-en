@@ -32,6 +32,7 @@ This repository is the **master asset hub of Vibe AI Labs**: company profile, br
   - [Vision, mission, core values](#vision-mission-core-values)
   - [Six differentiators](#six-differentiators)
   - [Three capabilities, 19 service groups](#three-capabilities-19-service-groups)
+  - [Two service packages](#two-service-packages)
   - [Technology and platforms](#technology-and-platforms)
   - [How we work](#how-we-work)
   - [Who we serve](#who-we-serve)
@@ -156,6 +157,24 @@ Combining art direction, traditional production and generative AI — faster and
 | 03 | Illustration & visual art |
 | 04 | Photography & video production |
 | 05 | Creation & production with generative AI |
+
+## Two service packages
+
+Each package combines Marketing, Artificial Intelligence (AI) and Creative into one system, instead of picking services one by one. Choose by the stage of the business. Cost is quoted by each business's scope; the first step is a conversation to find the right package.
+
+| | **01 · Kickstart** | **02 · Accelerate** |
+|---|---|---|
+| For | Businesses just starting out | Established businesses looking to raise performance |
+| Goal | A brand, sales channels and the basic tools to find customers and measure results | Less manual work, higher conversion and room to scale |
+| Focus | Audit → Build | Automate → Grow |
+| Engagement | Project-based | Project-based, then ongoing retainer |
+| Digital Marketing | Positioning, landing page, social channels, measurement | Performance advertising, CRO, SEO & AI search, CRM |
+| AI & Automation | Customer-facing chatbot, simple task automation | AI Agents, RAG chatbot, sales and reporting automation |
+| Design & Creative Studio | Logo, basic identity, templates, AI product images | Key visuals, video, high-volume content with generative AI |
+| Deliverables | Logo files and identity kit, live landing page, configured chatbot and automation workflows, first-month content calendar, user guides | Current-state assessment and roadmap, AI Agents and automation workflows, reporting dashboard, key visual set and content library, operations guides, training |
+| KPIs to track | Traffic, leads, landing page conversion rate, customer response time | CPL, conversion rate, ROAS, time saved, automation rate, content output |
+
+Full scope of each package: the company profile (3 "Service packages" pages), the One Pager (page 2), the [website](https://vibe-ai-labs.vibeailabs.workers.dev/en/dich-vu#goi-dich-vu) and the three posters in [`04_Services/`](04_Services).
 
 ## Technology and platforms
 
@@ -307,7 +326,7 @@ VIBE AI LABS/
 │   └── 02_Designer-Kit/        Kit for the poster design team
 ├── 03_Decks/
 │   └── 01_Community-Events/    Community & Events deck + Outreach Kit
-├── 04_Services/                Collateral for the 3 service capabilities
+├── 04_Services/                Posters for the 3 capabilities and the 2 service packages
 ├── 05_Social-Covers/           Logo and Facebook group cover images
 ├── 06_AI-Tools/                In-house AI agents & skills
 │   ├── 01_AI-Agents/
@@ -323,8 +342,8 @@ VIBE AI LABS/
 
 | File | Description |
 |---|---|
-| `Vibe_AI_Labs_Company_Profile_VI.pdf` · `_EN.pdf` · `_ZH.pdf` | 45-page landscape A4 company profile — source of Part A above |
-| `Vibe_AI_Labs_One_Pager_VI.pdf` · `_EN.pdf` · `_ZH.pdf` | One-page overview |
+| `Vibe_AI_Labs_Company_Profile_VI.pdf` · `_EN.pdf` · `_ZH.pdf` | 48-page landscape A4 company profile (including 3 "Service packages" pages) — source of Part A above |
+| `Vibe_AI_Labs_One_Pager_VI.pdf` · `_EN.pdf` · `_ZH.pdf` | Two-page overview: page 1 at a glance, page 2 the two service packages |
 | `Vibe_AI_Labs_Proposal_Template_VI.pdf` · `.docx` | Project proposal template (PDF and editable) |
 
 ### `02_Brand-Build-Source/` — Brand build sources
@@ -332,7 +351,7 @@ VIBE AI LABS/
 | Item | Description |
 |---|---|
 | `Vibe AI Labs .docx` (+ `.bak`) | 34-section brand dossier (Vietnamese) and its original |
-| `_tools/` | Python build scripts: `brandbuild/` (logo, brand kit, rendering), `dk/` (R1–R6 poster engine, playbook, cheat sheet), `trace_data/`, `assets/`, `pdf_to_png.swift`, `setup.sh`, `requirements.txt`, `folder_map.py` |
+| `_tools/` | Python build scripts: `brandbuild/` (logo, brand kit, rendering), `dk/` (R1–R6 poster engine, playbook, cheat sheet), `profile_packages/` (inserts the "Service packages" pages into the company profile and One Pager), `service_posters/` (service and package posters), `trace_data/`, `assets/`, `pdf_to_png.swift`, `setup.sh`, `requirements.txt`, `folder_map.py` |
 | `posts/` | Facebook posters |
 | `Vibe_AI_Labs_Design_Team_Kit.zip` | Zipped Design Team Kit (kept locally only) |
 | `CLAUDE.md` | Working notes |
@@ -381,10 +400,12 @@ The 81 MB `02_Designer-Kit.zip` archive is kept locally only, not in the repo.
 
 | File | Description |
 |---|---|
-| `I. DỊCH VỤ MARKETING SỐ.png` | Digital Marketing services infographic |
-| `II. DỊCH VỤ TRÍ TUỆ NHÂN TẠO (AI) & TỰ ĐỘNG HÓA.png` | AI & Automation services infographic |
-| `III. THIẾT KẾ & SÁNG TẠO.png` | Design & Creative Studio services infographic |
-| `dv1_marketing-so_4x5.png` · `dv2_ai-tu-dong-hoa_4x5.png` · `dv3_thiet-ke-sang-tao_1x1.png` | Social media crops |
+| `I. DỊCH VỤ MARKETING SỐ.png` · `II. DỊCH VỤ TRÍ TUỆ NHÂN TẠO (AI) & TỰ ĐỘNG HÓA.png` · `III. THIẾT KẾ & SÁNG TẠO.png` | Infographics for the three capabilities, with 3D illustrations |
+| `dv1_marketing-so_4x5.png` · `dv2_ai-tu-dong-hoa_4x5.png` · `dv3_thiet-ke-sang-tao_1x1.png` | Social posters for the three capabilities, icon-tile style (2160 px) |
+| `goi0_hai-goi-dich-vu_1x1.png` | Overview poster of the two service packages |
+| `goi1_khoi-dong_4x5.png` · `goi2_tang-toc_4x5.png` | Kickstart and Accelerate package posters, scope by capability |
+
+All nine posters are in Vietnamese and share the same conventions: the official horizontal logo without the descriptor line; Plus Jakarta Sans for titles, numbers and service names; Inter for the subtitle, tagline and footer; multi-line names spaced so Vietnamese accents clear the line above; one footer, `VIBE AI LABS` · `MARKETING × AI × CREATIVE`. To rebuild them see [Part C](#rebuild-the-service-and-package-posters).
 
 ## `05_Social-Covers/`
 
@@ -425,7 +446,7 @@ Skeleton for a Claude "design brief" skill (SKILL.md, PDF-reading script, empty 
 
 ## `07_Website/vibe-ai-labs/`
 
-**Submodule** → [`vibeailabs-tech/vibe-ai-labs-website`](https://github.com/vibeailabs-tech/vibe-ai-labs-website) (private). Next.js 16 via vinext, Cloudflare Workers, D1 + Drizzle, trilingual VI/EN/ZH. Live: https://vibe-ai-labs.vibeailabs.workers.dev. Shared brand kit lives in `02_Brandkit/01_General-Brandkit/`.
+**Submodule** → [`vibeailabs-tech/vibe-ai-labs-website`](https://github.com/vibeailabs-tech/vibe-ai-labs-website) (private). Next.js 16 via vinext, Cloudflare Workers, D1 + Drizzle, trilingual VI/EN/ZH. The home and services pages include the Kickstart and Accelerate packages. Live: https://vibe-ai-labs.vibeailabs.workers.dev. Shared brand kit lives in `02_Brandkit/01_General-Brandkit/`.
 
 ---
 
@@ -465,6 +486,19 @@ bash _tools/setup.sh            # restores build scripts into /tmp
 ```
 
 Requires Google Chrome (SVG → PNG, HTML → PDF rendering) and Python 3. Details in `01_General/02_Brand-Build-Source/CLAUDE.md`.
+
+### Rebuild the service and package posters
+
+```bash
+cd "01_General/02_Brand-Build-Source/_tools/service_posters"
+python3 build_package_posters.py     # goi0 · goi1 · goi2 (built from HTML)
+python3 retype_legacy_posters.py     # I. · II. · III. (re-sets text and logo on the original art)
+python3 loosen_label_lines.py        # dv1 · dv2 · dv3 (opens line spacing, redraws the footer)
+```
+
+All three write straight into `04_Services/`; add `--out DIR` to export elsewhere. Requires Google Chrome and Python 3 with Pillow, NumPy and OpenCV. The last two scripts read their source images from a commit in the history of the Vietnamese repository ([`vibe-ai-labs`](https://github.com/vibeailabs-tech/vibe-ai-labs)), so run them from a clone of that repository.
+
+"Service packages" pages of the company profile and One Pager: `python3 _tools/profile_packages/build_packages.py --lang <vi|en|zh> [--onepager] [--write]` (the source PDF must be the original export, see `CLAUDE.md`).
 
 ### Website
 

@@ -92,3 +92,12 @@ Cách sửa docx: giải nén (zip) → sửa `word/document.xml` bằng script 
 - Thông số thiết kế deck (đo từ PDF gốc, đã khớp pixel): trang 1122.5×794 px (A4 ngang), lề 52 px; font biến thiên Plus Jakarta Sans + Inter nạp trực tiếp; nhãn in hoa letter-spacing .2em; tiêu đề −.025em; pill 10.5 px Inter 500, nền/viền theo trụ (`#EBF1FF/#B3C9FF` · `#EAF7EF/#AADDBD` · `#FEF1E7/#FCC6A0`); phần pill trong thẻ phải dùng CSS `zoom` để vừa chiều cao.
 - Quy tắc nội dung hai gói: giữ chính sách "không áp dụng một mức giá cố định" (không in giá); số lượng trong gói Khởi động (1 landing page, 1–2 kênh, 1 buổi đào tạo) là đề xuất, người dùng chưa xác nhận; chưa ghi thời gian triển khai.
 - **One Pager (2026-11-13):** cả ba bản VI · EN · ZH giờ **2 trang** — trang 2 là hai gói dịch vụ (phạm vi theo ba trụ, không có phần bàn giao/KPI). Dựng bằng `build_packages.py --lang <vi|en|zh> --onepager [--write]`; script yêu cầu PDF nguồn là bản gốc 1 trang. Tên file vẫn là `One_Pager`.
+
+## 10. Poster gói dịch vụ (`04_Services/`) — 2026-11-15
+
+- Ba poster `goi0_hai-goi-dich-vu_1x1.png`, `goi1_khoi-dong_4x5.png`, `goi2_tang-toc_4x5.png` (2160 px) dựng theo phong cách bộ `dv1/dv2/dv3` (bộ gốc không có file nguồn; thông số đo từ PNG).
+- Script: `_tools/service_posters/build_package_posters.py` (HTML → Chrome headless 2x; `--out DIR` để xuất thử). Nội dung thẻ lấy từ `brief` trong `profile_packages/build_packages.py`.
+- Phong cách này dùng xanh ngọc `#10A58E` và hồng `#E11D74` (ngoài bảng màu lõi) và tagline "Turn Brands into Growth".
+- Ba poster gốc `I.` / `II.` / `III.` (PNG phẳng, không có nguồn) đã được dựng lại chữ bằng Plus Jakarta Sans + Inter và thay logo sóng cũ bằng logo chính thức: `_tools/service_posters/retype_legacy_posters.py` (xoá chữ cũ bằng inpaint, vẽ chữ mới khớp vị trí cũ; đọc ảnh gốc từ git commit `9d30642`). Minh hoạ 3D giữ nguyên.
+- Người dùng không thích dòng descriptor dưới logo trên poster: dùng logo ngang **không** descriptor, chữ căn giữa theo biểu tượng.
+- Tên dịch vụ nhiều dòng phải có giãn dòng đủ để dấu tiếng Việt không chạm dòng trên (line-height ≥ 1.3 cho chữ hoa Plus Jakarta Sans 800). `dv1/dv2/dv3` được nới dòng trực tiếp trên PNG bằng `_tools/service_posters/loosen_label_lines.py` (đọc ảnh gốc từ git `9d30642`); `I./II./III.` dùng `LABEL_LH` trong `retype_legacy_posters.py`.
